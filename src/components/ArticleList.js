@@ -3,7 +3,7 @@ import Article from "./Article";
 
 export default function ArticleList({ posts }) {
   const dis = posts.map((post) => (
-    <Article title={posts.title} date={posts.date} preview={posts.preview} />
+    <Article title={post.title} date={post.date} preview={post.preview} />
   ));
   return <main>{dis}</main>;
 }
